@@ -1,0 +1,112 @@
+/* Style général */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c4d0e3);
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffffaa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#github-link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#github-link:hover {
+  color: #000;
+  opacity: 0.5;
+}
+
+#github-logo {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.color-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#colorPicker {
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.color-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#colorCode {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  width: 110px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.copy-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+.preview-box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ddd;
+  background-color: #1864dd;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
