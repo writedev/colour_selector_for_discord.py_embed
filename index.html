@@ -7,15 +7,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="color-picker-container">
-      <input type="color" id="colorPicker" value="#a6e712" />
-      <div class="color-display">
-        <input type="text" id="colorCode" readonly value="0xa6e712" />
-        <button id="copyButton" class="copy-btn">Copier</button>
-      </div>
-    </div>
+    <header>
+      <h1>Sélecteur de Couleur</h1>
+      <a
+        href="https://github.com/votre-profil"
+        target="_blank"
+        id="github-link"
+      >
+        <img
+          src="https://github.com/writedev/colour_selector_for_discord.py_embed/blob/main/img/github-icon.svg"
+          alt="GitHub"
+          id="github-logo"
+        />
+      </a>
+    </header>
 
-    <div id="preview" class="preview-box"></div>
+    <main>
+      <div class="color-picker-container">
+        <input type="color" id="colorPicker" value="#a6e712" />
+        <div class="color-display">
+          <input type="text" id="colorCode" readonly value="0xa6e712" />
+          <button id="copyButton" class="copy-btn">Copier</button>
+        </div>
+      </div>
+
+      <div id="preview" class="preview-box"></div>
+    </main>
 
     <script src="script.js"></script>
   </body>
