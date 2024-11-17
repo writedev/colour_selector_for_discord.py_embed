@@ -2,7 +2,7 @@
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(135deg, #f5f7fa, #c4d0e3);
   color: #333;
 }
 
@@ -23,19 +23,20 @@ header h1 {
 }
 
 #github-link {
-  position: relative;
   text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#github-link:hover {
+  color: #000;
+  transform: scale(1.1);
 }
 
 #github-logo {
   width: 40px;
   height: 40px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-#github-logo:hover {
-  transform: scale(1.1);
+  fill: currentColor;
 }
 
 main {
@@ -104,7 +105,7 @@ main {
   width: 200px;
   height: 200px;
   border: 2px solid #ddd;
-  background-color: #a6e712;
+  background-color: #1864dd;
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
