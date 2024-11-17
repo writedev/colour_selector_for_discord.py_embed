@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sélecteur de Couleur Amélioré</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="color-picker-container">
+      <input type="color" id="colorPicker" value="#a6e712" />
+      <div class="color-display">
+        <input type="text" id="colorCode" readonly value="0xa6e712" />
+        <button id="copyButton" class="copy-btn">Copier</button>
+      </div>
+    </div>
+
+    <div id="preview" class="preview-box"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
