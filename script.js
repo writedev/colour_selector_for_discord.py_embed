@@ -15,9 +15,9 @@ colorPicker.addEventListener("input", (event) => {
 copyButton.addEventListener("click", () => {
   navigator.clipboard.writeText(colorCode.value).then(() => {
     // Change temporairement le texte du bouton
-    copyButton.textContent = "Copié !";
+    copyButton.textContent = "Copy !";
     setTimeout(() => {
-      copyButton.textContent = "Copier";
+      copyButton.textContent = "Copy";
     }, 2000);
   });
 });
