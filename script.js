@@ -129,3 +129,17 @@ document.addEventListener("mousemove", (e) => {
 document.addEventListener("mouseup", () => {
   isDragging = false;
 });
+
+/* vue */
+
+const namespace = "colour_selector_for_discord.py_embed/writedev";
+const key = "page-visits";
+
+fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById(
+      "view-counter"
+    ).textContent = `view : ${data.value}`;
+  })
+  .catch((err) => console.error("Erreur:", err));
