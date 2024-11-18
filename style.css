@@ -182,7 +182,7 @@ body {
   opacity: 0.7;
 }
 #github-link:hover {
-  animation: github-link-hover 0.2s ease-out forwards;
+  animation: github-link-hover 0.2s ease-in + forwards;
 }
 
 @keyframes github-link-hover {
@@ -191,7 +191,7 @@ body {
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 
