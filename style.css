@@ -25,6 +25,7 @@ body {
   margin-bottom: 20px;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .color-preview {
@@ -162,4 +163,40 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   animation: copyAnimation 0.3s ease-out forwards;
+}
+
+#github-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#github-link:hover {
+  color: #000;
+  opacity: 0.7;
+}
+#github-link:hover {
+  animation: github-link-hover 0.2s ease-out forwards;
+}
+
+@keyframes github-link-hover {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+#github-logo {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
 }
